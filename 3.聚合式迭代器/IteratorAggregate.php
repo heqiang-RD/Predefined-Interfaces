@@ -1,6 +1,6 @@
 <?php
 
-class myData implements IteratorAggregate {
+class myData implements \IteratorAggregate {
 
     public $str = 'one';
     public $arr = array('a','b','c','d');
@@ -10,7 +10,7 @@ class myData implements IteratorAggregate {
      * @return ArrayIterator 返回一个外部迭代器。
      */
     public function getIterator() {
-        return new ArrayIterator($this);
+        return new \ArrayIterator($this);
     }
 
 }
