@@ -15,7 +15,7 @@ class myData implements IteratorAggregate {
 
 }
 
-$obj = new myData(array('1','2'));
+$obj = new myData();
 foreach ($obj as $k=>$v) {
     var_dump($k,$v,'——————');
 }
